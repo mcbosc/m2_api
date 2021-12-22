@@ -7,9 +7,8 @@ Simple clone the repo directly to your Magento root instalation to perfome the s
 git clone [repo-url] [path/to/the/directory]
 >git clone https://github.com/mcbosc/m2_api.git  /home/devops/dev-project 
 
-app/
-├── code/ 
-│   ├── Orlando/
+Folder
+app/code/Orlando/*
 
 
 After cloning, performe a setup:upgrade to install the new module call Orlando_WebApi
