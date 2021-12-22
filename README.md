@@ -5,7 +5,7 @@ that can insert/update/delete with there corresponding endpoint in a custom tabl
 
 ## Installation
 
-Simple clone the repo directly to your Magento root instalation to perfome the setup
+Simple, clone the repo directly to your Magento root instalation to perfom the setup
 
 git clone [repo-url] [path/to/the/directory]
 >git clone https://github.com/mcbosc/m2_api.git  /home/devops/dev-project 
