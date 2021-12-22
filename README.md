@@ -1,5 +1,8 @@
 # Orlando Web Api
 
+Is a simple Mageto 2 module api
+that can insert/update/delete with there corresponding endpoint in a custom table
+
 ## Installation
 
 Simple clone the repo directly to your Magento root instalation to perfome the setup
