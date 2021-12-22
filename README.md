@@ -4,11 +4,17 @@
 
 Simple clone the repo directly to your Magento root instalation to perfome the setup
 
->git clone git@github.com:whatever .
+git clone [repo-url] [path/to/the/directory]
+>git clone https://github.com/mcbosc/m2_api.git  /home/devops/dev-project 
 
-after cloning, performe a setup:upgrade to install the new module call Orlando_WebApi
+app/
+├── code/ 
+│   ├── Orlando/
 
-if the instalation is succssesfull you will see in your config.php the new module
+
+After cloning, performe a setup:upgrade to install the new module call Orlando_WebApi
+
+If the instalation is succssesfull you will see in your config.php the new module
 you will have a new menu option, and a new table call orlando_webapi
 
 ### Api Consumption (POSTMAN)
