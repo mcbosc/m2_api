@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Orlando_WebApi::webapi" title="Orlando WebApi" module="Orlando_WebApi" sortOrder="51" resource="Orlando_WebApi::webapi"/>
+        <add id="Orlando_WebApi::post" title="Manage Posts" module="Orlando_WebApi" sortOrder="10" action="orlando_webapi/post/index" resource="Orlando_WebApi::post" parent="Orlando_WebApi::webapi"/>
+        <add id="Orlando_WebApi::webapi_configuration" title="Configuration" module="Orlando_WebApi" sortOrder="99" parent="Orlando_WebApi::webapi" action="adminhtml/system_config/edit/section/webapi" resource="Orlando_WebApi::webapi_configuration"/>
+    </menu>
+</config>

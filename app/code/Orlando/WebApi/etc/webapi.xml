@@ -1,0 +1,24 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <route url="/V1/rest_test/insert" method="POST">
+        <service class="Orlando\WebApi\Api\PostInterface" method="setData"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route url="/V1/rest_test/update/:postId/data" method="POST">
+        <service class="Orlando\WebApi\Api\PostInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+    <route url="/V1/rest_test/delete/:postId" method="POST">
+        <service class="Orlando\WebApi\Api\PostInterface" method="setDelete"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+
+</routes>

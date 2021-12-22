@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Orlando\WebApi\Api\PostInterface" type="Orlando\WebApi\Model\Post" />
+    <preference for="Orlando\WebApi\Api\PostRepositoryInterface" type="Orlando\WebApi\Model\PostRepository" />
+
+    <!-- grid -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="orlando_webapi_post_listing_data_source" xsi:type="string">Orlando\WebApi\Model\ResourceModel\Post\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Orlando\WebApi\Model\ResourceModel\Post\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">orlando_webapi</argument>
+            <argument name="resourceModel" xsi:type="string">Orlando\WebApi\Model\ResourceModel\Post</argument>
+        </arguments>
+    </virtualType>
+    <!-- grid -->
+</config>
